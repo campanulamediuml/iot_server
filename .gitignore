@@ -1,0 +1,6 @@
+
+*.pyc
+
+*.java
+
+src/ws_client/WS_wxq.py

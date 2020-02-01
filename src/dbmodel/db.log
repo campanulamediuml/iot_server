@@ -1,0 +1,82 @@
+[2019-11-06 16:54:52]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    数据库模块连接成功
+[2019-11-06 16:54:52]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.coupon_main
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.coupon_main'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table coupon_main(id int AUTO_INCREMENT primary key ,name varchar(128) default "" ,c_number varchar(128) default "" ,coupon_desc varchar(1024) default "" ,c_time int default "0" ,u_time int default "0" ,amount int default "0" ,type int default "0" ,status int default "0" )
+    数据库查询出错
+    (1050, "Table 'coupon_main' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.coupon_attr
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.coupon_attr'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table coupon_attr(id int AUTO_INCREMENT primary key ,coupon_id int default "0" ,start_time int default "0" ,end_time int default "0" ,user_type int default "0" ,limit_take int default "0" ,limit_use int default "0" ,use_status int default "0" ,can_use_shop int default "0" ,playing_time_length int default 1800 ,status int default "0" ,out_time int default "0" ,use_in_shop int default "0" )
+    数据库查询出错
+    (1050, "Table 'coupon_attr' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.coupon_player
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.coupon_player'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table coupon_player(id int AUTO_INCREMENT primary key ,coupon_id int default "0" ,player_id int default "0" ,shop_id int default "0" ,received_times int default "0" ,add_time int default "0" ,start_time int default "0" ,end_time int default "0" ,activity_id int default "0" ,coupon_num varchar(64) default "" ,status int default "0" )
+    数据库查询出错
+    (1050, "Table 'coupon_player' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.activity_main
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.activity_main'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table activity_main(id int AUTO_INCREMENT primary key ,activity_type_id int default "0" ,name varchar(128) default "" ,activity_desc varchar(1024) default "" ,c_time int default "0" ,u_time int default "0" ,status int default "0" )
+    数据库查询出错
+    (1050, "Table 'activity_main' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.activity_attr
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.activity_attr'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table activity_attr(id int AUTO_INCREMENT primary key ,activity_id int default "0" ,start_time int default "0" ,end_time int default "0" ,player_can_join_num int default "0" ,limit_player int default "0" ,limit_shop int default "0" ,limit_shop_times int default "0" ,reward_type int default "0" ,reward_id int default "0" ,buy_serve_id int default "0" ,status int default "0" )
+    数据库查询出错
+    (1050, "Table 'activity_attr' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.player_activity
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.player_activity'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table player_activity(id int AUTO_INCREMENT primary key ,player_id int default "0" ,add_time int default "0" ,activity_id int default "0" ,status int default "0" )
+    数据库查询出错
+    (1050, "Table 'player_activity' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.shop_activity
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.shop_activity'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    create table shop_activity(id int AUTO_INCREMENT primary key ,shop_id int default "0" ,add_time int default "0" ,activity_id int default "0" ,status int default "0" )
+    数据库查询出错
+    (1050, "Table 'shop_activity' already exists")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.player_limit_coupon
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.player_limit_coupon'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.player_limit_activity
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.player_limit_activity'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.activity_type
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.activity_type'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.shop_limit_activity
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.shop_limit_activity'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.shop_limit_coupon
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.shop_limit_coupon'")
+[2019-11-06 16:54:53]----------process:/Users/JingjingHe/Desktop/eyewave/main_pro/projects/server/venv/src/dbmodel/model.py
+    drop table street_machine.activity_limit_package
+    数据库查询出错
+    (1051, "Unknown table 'street_machine.activity_limit_package'")
